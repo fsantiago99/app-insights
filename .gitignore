@@ -55,3 +55,13 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# JetBrains Rider / .idea
+.idea/
+*.sln.iml
+
+# AppInsights: the SQLite database is a runtime artifact, not source.
+/data/*.db
+/data/*.db-shm
+/data/*.db-wal
+!/data/.gitkeep
